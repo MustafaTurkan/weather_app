@@ -1,16 +1,40 @@
 # weather_app
 
-A new Flutter project.
+Flutter ile yapılan hava durumu uygulaması
 
-## Getting Started
+## Akış
 
-This project is a starting point for a Flutter application.
+  -Kullanıcı ilk defa giriş yapar anasayfada search dropdown ile karşılaşır.
+  -Search ile il seçer ve hava durumu detay sayfasına yönledirir.
+  -Detay sayfasında Rüzgar, nem sıcaklık gibi değerleri görür.
+  -Eğer ekli değilse appbarda ekle iconu ile takip etmek istediği ili ekler.
+  -Eğer ekli ise ekle iconu yerine close ikonu ile karşılaşır.
+  -Yeni bir hava durumu ekleyip anasayfaya geldiğinde eklenen il ile karşılaşır.
+  -Yeni eklenen hava durumlarında anasayfaya geldiğinde endpointe tekrardan istek atmadan state teki hava durumunu görür.
+  -Kullanıcı app e tekrar giriş yaptı ve ekli bir il var ise endpointe istek atar ve ilgili havadurumlarını çeker ve kullanıcıya yansır.
+  -Refreshindicator ile kullanıcı anasayfasındaki illerin hava durumlarını günceller.
+  -Sola kaydırarak kullanıcı eklediği hava durumunu siler.
 
-A few resources to get you started if this is your first Flutter project:
+  ## Kullanılan plugin ve package
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  http => endpoint isteklerinde kullanıldı.
+  hive => localda tutulması gereken datalar için kullanıldı.
+  google_fonts=>fontların düzenlenmesi için kullanıldı.
+  get=> basit statelerde, navigationda, localizationda, dependency Injectionda kullanıldı.
+  path_provider=>local pathlerin ayarlanması için kullanıldı.
+  font_awesome_flutter=>iconlar için kullanıldı.
+  dropdown_search=> city search field için kullanıldı.
+  flutter_bloc=> state management için kullanıldı.
+  animations => sayfa geçiş animasyonlarında kullanıldı.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+
